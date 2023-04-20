@@ -23,8 +23,6 @@
                    :q2 {\a :q2
                         \b :q2}}))
 
-
-
 ;2
 (def dfa-2 (->DFA :q0
                   #{:q3}
@@ -73,21 +71,31 @@
 
 ;6
 (def dfa-6 (->DFA :q0
-                  #{:q0 :q2 :q4}
+                  #{:q0 :q2}
                   {:q0 {\# :q1
                         \$ :q0}
-                   :q1 {\# :q1
+                   :q1 {\# :q4
                         \$ :q2}
-                   :q2 {\# :q4
+                   :q2 {\# :q1
                         \$ :q3}
                    :q3 {\# :q4
                         \$ :q2}
-                   :q4 {\# :q1
-                        \$ :q0}}))
-
+                   :q4 {\# :q4
+                        \$ :q4}}))
 
 ;7
-
+(def dfa-7 (->DFA :q0
+                  #{:q2}
+                  {:q0 {\@ :q1
+                        \% :q3}
+                   :q1 {\@ :q2
+                        \% :q1}
+                   :q2 {\@ :q4
+                        \% :q2}
+                   :q3 {\@ :q1
+                        \% :q3}
+                   :q4 {\@ :q4
+                        \% :q4}}))
 
 (defn accepts?
   [dfa input]
@@ -173,15 +181,15 @@
   (is (not (accepts? dfa-6 "$$$$$#$###$$$$#")))
   (is (not (accepts? dfa-6 "#$#$#$#$#$$$#$$$#$$$#"))))
 
-;;7
-;(deftest test-problem7
-;  (is (accepts? dfa-7 "@@"))
-;  (is (accepts? dfa-7 "%@%@%"))
-;  (is (accepts? dfa-7 "@%%%%%%%%%@%%"))
-;  (is (accepts? dfa-7 "%%%%%%@@%%%%%%%%%%"))
-;  (is (not (accepts? dfa-7 "")))
-;  (is (not (accepts? dfa-7 "%@%")))
-;  (is (not (accepts? dfa-7 "@@@@@@@@@@@@")))
-;  (is (not (accepts? dfa-7 "@%%%%@%%%%%@%%%"))))
+;7
+(deftest test-problem7
+  (is (accepts? dfa-7 "@@"))
+  (is (accepts? dfa-7 "%@%@%"))
+  (is (accepts? dfa-7 "@%%%%%%%%%@%%"))
+  (is (accepts? dfa-7 "%%%%%%@@%%%%%%%%%%"))
+  (is (not (accepts? dfa-7 "")))
+  (is (not (accepts? dfa-7 "%@%")))
+  (is (not (accepts? dfa-7 "@@@@@@@@@@@@")))
+  (is (not (accepts? dfa-7 "@%%%%@%%%%%@%%%"))))
 
 (run-tests)
