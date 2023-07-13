@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Reto: Resaltador de léxico de JSON</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgb(14, 0, 93);
+            color: white;
+            font-family: 'Sofia Sans Semi Condensed', sans-serif;
+            margin: 0;
+        }
+
+        .bonito {
+            background-color: white;
+            color: black;
+            font-size: 3rem;
+            text-align: center;
+            box-shadow: -1px 13px 60px -3px rgba(166, 219, 255, 1);
+            border-radius: 0px 0px 15px 15px;
+            padding: 1rem;
+            margin: 0;
+        }
+
+        .nombres {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .nombres h2 {
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
+
+        .resultado {
+            background-color: white;
+            color: black;
+            font-size: 1rem;
+            margin: 0 auto;
+            width: fit-content;
+            box-shadow: -1px 13px 60px -3px rgba(166, 219, 255, 1);
+            border-radius: 15px;
+            padding: 1rem;
+        }
+
+        .numero {
+            color: aqua;
+        }
+
+        .cadena {
+            color: black;
+        }
+
+        .booleano {
+            color: greenyellow
+        }
+
+        .simbolo {
+            color: black;
+        }
+
+        .invalido {
+            color: yellow;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="bonito">Resaltador de léxico de JSON</h1>
+
+    <div class="nombres">
+        <h2>A01753486 Diego Manjarrez Viveros</h2>
+
+        <h2>A01754917 Eduardo Alfredo Ramírez Muñoz</h2>
+    </div>
+
+    <div class="resultado">
+        <p class="numero">123123123123</p>
+        <p class="cadena">esto es una cadena de caracterres</p>
+        <p class="booleano">true</p>
+        <p class="simbolo">: ?</p>
+        <p class="invalido">.</p>
+        <p class="numero">123123123123</p>
+        <p class="cadena">esto es una cadena de caracterres</p>
+        <p class="booleano">true</p>
+        <p class="simbolo">: ?</p>
+        <p class="invalido">.</p>
+    </div>
+</body>
+
+</html>
