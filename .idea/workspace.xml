@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e1e7ddf-c232-4000-8ab3-6f7d60032fad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ClojureProjectResolveSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Joy of clojure/Joy.clj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Joy of clojure/cap4.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nrepl-port" beforeDir="false" afterPath="$PROJECT_DIR$/.nrepl-port" afterDir="false" />
     </list>
@@ -33,16 +32,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;cursive.last.file.extension.C\\:/Users/mangu/Documents/GitHub/clojure/Joy of clojure&quot;: &quot;clj&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cursive.last.file.extension.C\\:/Users/mangu/Documents/GitHub/clojure/Joy of clojure": "clj",
+    "settings.editor.selected.configurable": "inlay.hints"
   }
-}</component>
-  <component name="ReplState" timestamp="1694026053403">{:repl-history {:ide [], :local [{:command &quot;(println \&quot;Hola soy el repl\&quot;)&quot;, :offset 28, :ns &quot;user&quot;} {:command &quot;(println \&quot;Manja estuvo aquí\&quot;)&quot;, :offset 29, :ns &quot;Joy&quot;}], :remote []}}</component>
+}]]></component>
+  <component name="ReplState" timestamp="1694112502629">{:repl-history {:ide [], :local [{:command &quot;(println \&quot;Hola soy el repl\&quot;)&quot;, :offset 28, :ns &quot;user&quot;} {:command &quot;(println \&quot;Manja estuvo aquí\&quot;)&quot;, :offset 29, :ns &quot;Joy&quot;}], :remote []}}</component>
   <component name="RunManager">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
